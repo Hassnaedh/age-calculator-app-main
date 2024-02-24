@@ -1,37 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Age calculator app</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="flex items-center justify-center min-h-screen bg-primary-purple"
+    >
+      <div
+        class="w-96 md:w-[600px] h-96 md:h-[400px] flex-col bg-white rounded-lg rounded-br-[90px] p-9"
+      >
+        <form class="flex gap-4">
+          <div class="flex flex-col gap-1.5 font-poppins">
+            <label class="text-xs text-neutral-smokey-grey">DAY</label>
+            <input
+              type="text"
+              name="day"
+              placeholder="DD"
+              class="w-24 px-4 py-2 text-base text-neutral-off-black border border-gray-300 rounded-md"
+            />
+          </div>
 
-  Day
-  DD
+          <div class="flex flex-col gap-1.5 font-poppins">
+            <label class="text-xs text-neutral-smokey-grey">MONTH</label>
+            <input
+              type="text"
+              name="month"
+              placeholder="MM"
+              class="w-24 px-4 py-2 text-base text-neutral-off-black border border-gray-300 rounded-md"
+            />
+          </div>
 
-  Month
-  MM
+          <div class="flex flex-col gap-1.5 font-poppins">
+            <label class="text-xs text-neutral-smokey-grey">YEAR</label>
+            <input
+              type="text"
+              name="year"
+              placeholder="YYYY"
+              class="w-24 px-4 py-2 text-base text-neutral-off-black border border-gray-300 rounded-md"
+            />
+          </div>
+        </form>
+        <div class="relative">
+          <hr class="w-full border-b-gray-800 my-8" />
+          <button
+            class="absolute bg-primary-purple rounded-full w-14 h-14 flex items-center justify-center -top-6 right-32 md:right-0"
+          >
+            <img
+              src="./assets/images/icon-arrow.svg"
+              alt="icon-arrow"
+              class="w-8 h-8"
+            />
+          </button>
+        </div>
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="flex flex-col gap-4 font-poppins text-5xl md:text-6xl italic font-bold">
+          <p class="text-primary-purple">
+            38 <span class="text-neutral-off-black">years</span>
+          </p>
+          <p class="text-primary-purple">
+            3 <span class="text-neutral-off-black">months</span>
+          </p>
+          <p class="text-primary-purple">
+            26 <span class="text-neutral-off-black">days</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
